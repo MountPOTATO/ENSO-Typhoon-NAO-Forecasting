@@ -7,7 +7,7 @@
 </view>
 <view class='mymain'>
   <view class='qs'>
-    <view class="container">
+    <view class="container" bindtap="close">
       <view class='container_head'>
         <view class='container_head_top'>
           <view class='prev'>
@@ -19,6 +19,10 @@
             <text>下一周</text>
             <text class='iconfont icon-jiantouyou'></text>
           </view>
+        </view>
+        <!-- 尝试加入selectBox -->
+        <view class="select-wrap">
+          <select id="select" options="{{options}}" key="city_id" text="city_name" bind:change="change"></select>
         </view>
         <view class='container_head_main'>
           <view>

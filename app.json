@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/showChart/show",
+    "pages/selectBox/select",  
     "pages/index/index",
     "pages/logs/logs"
   ],
