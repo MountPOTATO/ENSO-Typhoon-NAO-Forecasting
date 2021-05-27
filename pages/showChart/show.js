@@ -34,6 +34,7 @@ Page({
     // 关闭select
     this.selectComponent('#select').close()
   },
+  
   //获取数据按钮
   getData_btn:function(){
     console.log('dddddd')

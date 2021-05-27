@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/showChart/show",
-    "pages/selectBox/select",  
-    "pages/index/index",
+    "pages/Enso/Enso",
+    "pages/typhoon/typhoon",
+    
+    "pages/Nao/Nao",
+    
     "pages/logs/logs"
   ],
   "window": {
@@ -10,6 +12,33 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/Enso/Enso",
+        "iconPath": "/image/ENSO.png",
+        "selectedIconPath": "/image/ENSO_Selected.png",
+        "text": "ENSO"
+      },
+      {
+        "pagePath": "pages/Nao/Nao",
+        "iconPath": "/image/NAO.png",
+        "selectedIconPath": "/image/NAO_Selected.png",
+        "text": "NAO"
+      },
+      {
+        "pagePath": "pages/typhoon/typhoon",
+        "iconPath": "/image/Typhoon.png",
+        "selectedIconPath": "/image/Typhoon_Selected.png",
+        "text": "Typhoon"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

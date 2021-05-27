@@ -1,0 +1,9 @@
+/* pages/typhoon/typhoon.wxss */
+page {
+  height: 100%;
+  width: 100%;
+}
+.maMap{
+  height: 100%;
+  width: 100%;
+}

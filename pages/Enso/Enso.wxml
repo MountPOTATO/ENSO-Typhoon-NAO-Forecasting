@@ -1,0 +1,34 @@
+<view class='mymain' >
+  <view class='qs'>
+    <view class="container">
+      <view class='container_head'>
+        <!-- <view class='container_head_top'>
+          <view class='top_title' value="{{show}}" style="">{{show}}</view>
+          </view> -->
+          <view class="section">
+            <view class="section__title">选择ENSO预测开始的时间：</view>
+                <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange" fields = "month">
+                  <view class="picker">当前选择的预测时间为: {{date}}及之后</view>
+             </picker>
+          </view>
+        <view class='container_head_main'>
+          <view>
+            <view class='main_Ttitle'>预测平均值</view>
+            <text class='main_main' value="{{avg}}">{{avg}}</text>
+          </view>
+          <view>
+            <view class='main_Ttitle'>实际平均值</view>
+            <text class='main_main' value="{{avg}}">{{avg}}</text>
+          </view>
+        </view>
+        
+        <button bindtap="getData_btn" style="background-color:rgba(87, 213, 200, 1);color: #FFFFFF; margin-top:10px">获取数据</button>
+      </view>
+      <scroll-view scroll-y="true">
+        <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+      </scroll-view>
+    </view>
+  </view>
+
+
+</view>
