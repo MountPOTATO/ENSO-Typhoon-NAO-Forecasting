@@ -199,8 +199,24 @@ Component({
               latitude:list[i].latitude,
               //TODO:加label
               iconPath:"../../image/point.png",
-              width:20,
-              height:20
+              width:15,
+              height:15,
+              anchor:{x:.5,y:1},
+              callout:{
+                content:"台风:"+list[i].typhoon_id.toString()+"\n"
+                       +"经度:"+list[i].longitude.toString()+"\n"
+                       +"纬度:"+list[i].latitude.toString(),
+                color:"#000000",
+                borderRadius:7,
+                borderColor:"#000000",
+                borderWidth:2,
+                bgColor:'rgba(255,255,0,0.7)',//背景颜色，可使用rgba
+                textAlign:"center",
+                anchorX:0,
+                anchorY:0,
+                fontSize:12,
+                display:"BYCLICK",
+              }
           }
             points.push(point);
             mas.push(maker)
