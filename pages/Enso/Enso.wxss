@@ -253,10 +253,11 @@ page {
   margin-bottom: 16rpx;
   padding-left: 10rpx;
   padding-right: 30rpx;
-  background-color: #0bd3d3;
-  color:#ffffff;
+  color:#008080;
 }
 .picker{
 padding: 10rpx;
 color: 	#008080;
+flex-direction:row;
+background-color:	#E1FFFF;
 }

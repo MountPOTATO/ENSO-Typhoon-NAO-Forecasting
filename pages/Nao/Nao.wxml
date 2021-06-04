@@ -8,17 +8,17 @@
           <view class="section">
             <view class="section__title">选择NAO预测开始的时间：</view>
                 <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange" fields = "month">
-                  <view class="picker">当前选择的预测时间为: {{date}}及之后</view>
+                  <view class="picker">当前选择的预测时间为:<text style="color:#40E0D0"> {{date}}</text>及之后</view>
              </picker>
           </view>
         <view class='container_head_main'>
           <view>
             <view class='main_Ttitle'>预测平均值</view>
-            <text class='main_main' value="{{avg}}">{{avg}}</text>
+            <text class='main_main' value="{{avg_pred}}">{{avg_pred}}</text>
           </view>
           <view>
             <view class='main_Ttitle'>实际平均值</view>
-            <text class='main_main' value="{{avg}}">{{avg}}</text>
+            <text class='main_main' value="{{avg_data}}">{{avg_data}}</text>
           </view>
         </view>
         <button bindtap="getData_btn" style="background-color:rgba(87, 213, 200, 1);color: #FFFFFF; margin-top:10px">获取数据</button>

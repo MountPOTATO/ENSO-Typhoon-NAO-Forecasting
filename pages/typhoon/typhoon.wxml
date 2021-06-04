@@ -1,3 +1,28 @@
 <!--pages/typhoon/typhoon.wxml-->
+
+<!-- <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindcolumnchange" range-key="name" value="{{multiIndex}}" range="{{multiArray}}">
+                  <view class='model'></view>
+                  <zan-field placeholder="选择属性类别" value="{{select}}">
+                  </zan-field>
+</picker> -->
+
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+</view>
+
 <map id="myMap" class="maMap" subkey="SO7BZ-4223F-REQJI-NWWIF-OVAWS-BRFB7" latitude="23.033671" longitude="122.564427" scale="4" polyline="{{polyline}}" markers="{{markers}}">
+  <cover-view slot="callout">
+    <cover-view marker-id="0"></cover-view>
+    <cover-view marker-id="1"></cover-view>
+  </cover-view>
 </map>
+
+
+
+
+

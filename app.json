@@ -1,10 +1,8 @@
 {
   "pages": [
-    "pages/Enso/Enso",
     "pages/typhoon/typhoon",
-    
+    "pages/Enso/Enso",
     "pages/Nao/Nao",
-    
     "pages/logs/logs"
   ],
   "window": {
